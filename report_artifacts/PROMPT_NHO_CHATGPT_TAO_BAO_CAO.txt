@@ -1,0 +1,110 @@
+Hãy tạo cho tôi một file Microsoft Word (.docx) báo cáo thực tập nghề nghiệp dựa trên các tài liệu tôi đính kèm.
+
+TÀI LIỆU TRONG GÓI:
+1. FILE BAO CAO THUC TAP.docx
+   - Đây là file mẫu.
+   - Hãy tham khảo bố cục, phong cách trình bày, trang bìa, mục lục, các chương, nhật ký thực tập và phiếu đánh giá.
+
+2. Thư mục hrm-frontend
+   - Frontend của hệ thống quản lý nhân sự.
+   - Công nghệ: React 19, React Router, Bootstrap, Axios và Vite.
+
+3. Thư mục hrm-system
+   - Backend của hệ thống.
+   - Công nghệ: Java 21, Spring Boot 3.5, Spring Data JPA, Spring Security, JWT, SQL Server và Apache POI.
+
+4. Thư mục screenshots
+   - Ảnh giao diện thực tế của hệ thống.
+   - Hãy chèn các ảnh này vào Chương 4 và viết chú thích hình.
+
+5. File create_report.py
+   - Source Python đã dùng để tạo một phiên bản báo cáo.
+   - Có thể tham khảo toàn bộ nội dung, sơ đồ, bảng biểu và bố cục từ file này.
+
+YÊU CẦU BÁO CÁO:
+- Chủ đề: XÂY DỰNG HỆ THỐNG QUẢN LÝ NHÂN SỰ HRM.
+- Viết bằng tiếng Việt, văn phong báo cáo sinh viên, rõ ràng và tự nhiên.
+- Định dạng khổ A4.
+- Phông chữ Times New Roman, cỡ 13 cho nội dung.
+- Giãn dòng khoảng 1.3 đến 1.5.
+- Căn đều hai lề.
+- Lề trái 3–3,5 cm; phải 2 cm; trên và dưới khoảng 2–2,5 cm.
+- Có đánh số trang và mục lục tự động.
+- Có ít nhất 40 trang.
+- Không viết chung chung hoặc mô tả sai công nghệ. Phải đọc mã nguồn để trình bày đúng chức năng thực tế.
+
+THÔNG TIN TRANG BÌA:
+- Trường: Trường Đại học Đông Á.
+- Khoa: Công nghệ Thông tin.
+- Loại báo cáo: Báo cáo thực tập nghề nghiệp.
+- Năm học: 2025–2026.
+- Đề tài: Xây dựng hệ thống quản lý nhân sự HRM.
+- Đơn vị thực tập: Công ty Cổ phần Công Nghệ IZI Software.
+- Địa chỉ: 103 Hoài Thanh, Mỹ An, Ngũ Hành Sơn, Đà Nẵng.
+- Giảng viên hướng dẫn: ThS. Nguyễn Quốc Vương.
+- Sinh viên: Lê Thanh Thiên.
+- Lớp: chưa có thông tin, hãy để [BỔ SUNG] và tô vàng để tôi điền sau.
+
+CẤU TRÚC BẮT BUỘC:
+1. Hai trang bìa theo mẫu.
+2. Mục lục tự động.
+3. Danh mục từ viết tắt.
+4. Lời cảm ơn.
+5. Chương 1: Tổng quan về đơn vị thực tập.
+6. Chương 2: Cơ sở lý thuyết và tổng quan đề tài.
+7. Chương 3: Phân tích và thiết kế hệ thống.
+8. Chương 4: Triển khai và kết quả.
+9. Chương 5: Đánh giá kết quả thực tập.
+10. Nhật ký công việc 11 tuần.
+11. Bản tự đánh giá của sinh viên.
+12. Trang nhận xét của đơn vị thực tập.
+13. Trang nhận xét của giảng viên hướng dẫn.
+14. Phiếu đánh giá thực tập.
+
+NỘI DUNG HỆ THỐNG CẦN TRÌNH BÀY:
+- Đăng nhập, đăng ký và xác thực JWT.
+- Phân quyền ADMIN, HR và EMPLOYEE.
+- Quản lý nhân viên.
+- Quản lý phòng ban.
+- Quản lý chức vụ.
+- Quản lý chấm công.
+- Nhập dữ liệu chấm công từ Excel và tải file mẫu.
+- Quản lý đơn nghỉ phép, duyệt và từ chối đơn.
+- Quản lý bảng lương và tạo lương tự động theo tháng.
+- Quản lý tài khoản.
+- Duyệt tài khoản nhân viên tự đăng ký.
+- Giao việc và cập nhật trạng thái công việc.
+- Dashboard thống kê.
+- Chat nội bộ công ty.
+
+THÔNG TIN KỸ THUẬT QUAN TRỌNG:
+- Frontend: React 19.2.6, React Router 7.18, Bootstrap 5.3.8, Axios, Vite 8.
+- Backend: Java 21 và Spring Boot 3.5.15.
+- Cơ sở dữ liệu: Microsoft SQL Server.
+- Backend tổ chức theo Controller – Service – Repository – Entity.
+- Xác thực bằng JWT; mật khẩu mã hóa BCrypt.
+- Có 3 vai trò: ADMIN, HR, EMPLOYEE.
+- Apache POI được dùng cho chức năng Excel.
+- Công thức lương sử dụng 26 ngày công chuẩn.
+- Thưởng chuyên cần mặc định 500.000 đồng.
+- Phạt đi muộn mặc định 100.000 đồng/ngày.
+- Hệ thống tự động tạo bảng lương tháng trước lúc 00:05 ngày đầu tháng.
+- Frontend đã build thành công.
+- Backend Maven test đã chạy thành công và kết nối được SQL Server.
+
+HÌNH VÀ SƠ ĐỒ:
+- Chèn toàn bộ ảnh phù hợp trong thư mục screenshots.
+- Tạo thêm sơ đồ kiến trúc Client – Server – Database.
+- Tạo sơ đồ phân rã chức năng.
+- Tạo sơ đồ tác nhân/use case.
+- Tạo ERD khái quát.
+- Tạo quy trình nghỉ phép.
+- Tạo quy trình tính lương.
+- Đánh số hình theo từng chương và có chú thích.
+
+KẾT QUẢ ĐẦU RA:
+- Tạo trực tiếp file .docx hoàn chỉnh.
+- Kiểm tra file mở được bằng Microsoft Word.
+- Cập nhật mục lục và số trang trước khi giao.
+- Đồng thời xuất thêm một bản PDF để xem trước.
+- Không chỉ trả lời bằng nội dung văn bản; phải cung cấp file Word.

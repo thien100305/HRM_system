@@ -1,0 +1,236 @@
+.company-chat {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 80;
+}
+
+.company-chat-trigger {
+    position: relative;
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    margin-left: auto;
+    color: #fff;
+    background: linear-gradient(135deg, #625bf6, #736cf4);
+    border: 0;
+    border-radius: 18px;
+    box-shadow: 0 14px 30px rgba(98, 91, 246, 0.35);
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.company-chat-trigger:hover {
+    transform: translateY(-2px);
+}
+
+.company-chat-trigger b {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    min-width: 21px;
+    height: 21px;
+    padding: 0 5px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    background: #d92d20;
+    border: 2px solid #fff;
+    border-radius: 999px;
+    font-size: 10px;
+}
+
+.company-chat-panel {
+    width: min(390px, calc(100vw - 32px));
+    height: min(590px, calc(100vh - 110px));
+    display: grid;
+    grid-template-rows: auto 1fr auto auto;
+    margin-bottom: 12px;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #e4e7ec;
+    border-radius: 20px;
+    box-shadow: 0 24px 60px rgba(16, 24, 40, 0.24);
+}
+
+.company-chat-header {
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    background: linear-gradient(135deg, #4f47d7, #625bf6);
+}
+
+.company-chat-header strong,
+.company-chat-header small {
+    display: block;
+}
+
+.company-chat-header small {
+    margin-top: 3px;
+    color: #e4e2ff;
+    font-size: 10px;
+}
+
+.company-chat-header button {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background: #ffffff1f;
+    border: 0;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 21px;
+}
+
+.company-chat-messages {
+    padding: 16px;
+    overflow-y: auto;
+    background: #f8f9fc;
+}
+
+.company-chat-empty {
+    padding: 50px 20px;
+    color: #98a2b3;
+    text-align: center;
+    font-size: 12px;
+}
+
+.company-message {
+    width: 85%;
+    margin-bottom: 14px;
+}
+
+.company-message.own {
+    margin-left: auto;
+}
+
+.company-message-heading {
+    margin: 0 4px 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    color: #98a2b3;
+    font-size: 9px;
+}
+
+.company-message-heading strong {
+    color: #667085;
+    font-size: 10px;
+}
+
+.company-message.own .company-message-heading {
+    flex-direction: row-reverse;
+}
+
+.company-message-bubble {
+    position: relative;
+    padding: 10px 12px;
+    color: #344054;
+    background: #fff;
+    border: 1px solid #e8edf5;
+    border-radius: 5px 13px 13px 13px;
+    box-shadow: 0 3px 10px rgba(16, 24, 40, 0.04);
+}
+
+.company-message.own .company-message-bubble {
+    color: #fff;
+    background: #625bf6;
+    border-color: #625bf6;
+    border-radius: 13px 5px 13px 13px;
+}
+
+.company-message-bubble p {
+    margin: 0;
+    padding-right: 12px;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.company-message-bubble button {
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    padding: 0 3px;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.company-message-bubble:hover button {
+    opacity: 0.65;
+}
+
+.company-chat-error {
+    padding: 7px 12px;
+    color: #b42318;
+    background: #fff1f0;
+    font-size: 10px;
+}
+
+form.company-chat-compose {
+    max-width: none;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 42px;
+    align-items: end;
+    gap: 8px;
+    border: 0;
+    border-top: 1px solid #e8edf5;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.company-chat-compose textarea {
+    min-height: 42px;
+    max-height: 90px;
+    padding: 10px 11px;
+    resize: none;
+    color: #344054;
+    background: #f8f9fc;
+    border: 1px solid #e4e7ec;
+    border-radius: 11px;
+    outline: none;
+    font: inherit;
+    font-size: 12px;
+}
+
+.company-chat-compose textarea:focus {
+    border-color: #756ff7;
+}
+
+.company-chat-compose button {
+    width: 42px;
+    height: 42px;
+    color: #fff;
+    background: #625bf6;
+    border: 0;
+    border-radius: 11px;
+    cursor: pointer;
+}
+
+.company-chat-compose button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    .company-chat {
+        right: 14px;
+        bottom: 14px;
+    }
+
+    .company-chat-panel {
+        position: fixed;
+        inset: 76px 10px 82px;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+}
